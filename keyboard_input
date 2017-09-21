@@ -1,0 +1,21 @@
+
+# get the input
+original_input = input('scrie ceva: ')
+
+# split the original input into a list using "," as a separator
+split_input = original_input.split(',')
+
+# sort the list alphabetically
+sorted_input = sorted(split_input)
+
+# join the list by ","
+final_output_normal = str.join(',', sorted_input)
+
+# sort the list in inverse alphabetical oder
+sorted_input.reverse()
+
+# join the list by ","
+final_output_reverse = str.join(',', sorted_input)
+
+print(final_output_normal.lower())
+print(final_output_reverse.upper())

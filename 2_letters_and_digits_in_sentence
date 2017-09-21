@@ -1,0 +1,20 @@
+# get the sentence
+sentence = input('Please enter the sentence: ')
+
+# print(int('a'))
+
+letters = 0
+digits = 0
+space = 0
+
+for char in sentence:
+    if char.isdigit():
+        digits += 1
+    elif char.isalpha():
+        letters += 1
+    elif char.isspace():
+        space += 1
+
+print('Letters: ', letters)
+print('Digits: ', digits)
+print('Spaces: ', space)

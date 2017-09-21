@@ -1,0 +1,41 @@
+# # open file, by default is read only
+# f = open('blabla.txt') # <> f= open('blabla.txt', 'r')
+# content = f.read()
+# f.close()
+# print(content)
+
+# with open('blabla.txt', 'r') as f:
+#     content = f.read()
+#     print('f1 inchis: ', f.closed)
+#
+#
+# print('f1 inchis: ', f.closed)
+#
+# f2 = open('output.txt', 'w+')
+# f2.write(content)
+# f2.close()
+# print('f2 inchis: ', f2.closed)
+
+with open('blabla.txt', 'r') as f:
+    content = f .readlines()
+
+# row_index = int(input('La ce rand sa fie introdus textul?'))
+while True:
+    row_index = int(input('La ce rand sa fie introdus textul? '))
+    if row_index < len(content):
+        break
+row_content = input('Ce text sa contina? ')
+
+new_content = []
+new_line = ''
+for index, line in enumerate(content):
+    if index == row_index-1:
+        new_content.append(row_content + '\n')
+    if len(line) >= 3:
+        new_line = line[0:2].capitalize() + line[2:].capitalize()
+    else:
+        new_line = line
+    new_content.append(str(new_line))
+
+with open('output.txt', 'w+') as f2:
+    f2.writelines(new_content)

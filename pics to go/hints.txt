@@ -1,0 +1,45 @@
+1. Creare virtual env:
+		>python -3 -m virtualenv .automation_py3
+
+		
+		
+2. To enable the virtual env restart Pycharm
+
+
+To deactivate a virtualenv -> deactivate
+To activate a virtualenv -> Go to the folder in which the virtualenv is located, go to /scripts and run activate.bat
+
+3. install ipython
+
+4. 	import this -> the python manifesto
+
+5. 'asdasdasd {nume_var_1} asdasdada {nume_var_2}'.format(nume_var_1, nume_var_2)
+
+6. lists are using []
+
+7. in order for a folder to be considered package it has to contain a file named '__init__.py' in it.
+
+8. import stuff:
+
+
+			from package.module import function_name
+			
+9. in order to not execute the code in the module when an import is done everything that is done in that module by default should be under the scope of __main__
+
+
+
+
+10. git -> create your user:
+
+ git config --global user.name "blablaba"
+ git config --global user.email blabla@blalbl.bla
+ 
+11. git branch name -> create branch name
+
+12. git checkout name -> switch to branch name
+
+13. git add filename -> add filename to commit prepare zone
+
+14. git push origin branch name -> add the branch to the main repo
+
+15. 
