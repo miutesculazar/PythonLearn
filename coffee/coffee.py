@@ -14,4 +14,4 @@ class Coffee:
 
     def prepare_time_coffee(self):
         time_to_prepare = math.cos(self.water * math.pi) + math.sin(math.pi * self.sugar) + (math.pi * self.sugar)
-        print(time_to_prepare)
+        print(f'time_to_prepare')
