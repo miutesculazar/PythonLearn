@@ -27,6 +27,13 @@ To activate a virtualenv -> Go to the folder in which the virtualenv is located,
 9. in order to not execute the code in the module when an import is done everything that is done in that module by default should be under the scope of __main__
 
 
+a. private method: _methodName = private (dar nu e reala, se poate modifica)
+b. 
+
+
+
+
+
 
 
 10. git -> create your user:
